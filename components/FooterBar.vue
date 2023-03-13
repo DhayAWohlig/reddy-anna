@@ -53,7 +53,7 @@
                   $vuetify.breakpoint.mdAndDown ? 'disclaimer-textxs' : ''
                 "
                 ><a href="/privacy-policy" class="disclaimer_text"
-                  >{{ hostName }} Policy</a
+                  ><span>{{ hostName }}</span> Policy</a
                 ></span
               >
               <span
@@ -85,7 +85,9 @@
                 </li>
                 <li class="social__list">
                   <!-- <a href="#" class="social__link">Witzeal Fairplay</a> -->
-                  <a href="#" class="social__link text-capitalize">Fairplay</a>
+                  <a href="#" class="social__link text-capitalize">{{
+                    hostName
+                  }}</a>
                 </li>
               </ul>
             </div>
@@ -104,8 +106,8 @@
                   >
                 </li>
                 <li class="social__list mb-3">
-                  <a href="/privacy-policy" class="social__link text-capitalize"
-                    ><span class="text-capitalize">{{ hostName }}</span> Privacy
+                  <a href="/privacy-policy" class="social__link">
+                    <span class="text-capitalize">{{ hostName }}</span>
                     Policy</a
                   >
                 </li>
@@ -115,8 +117,9 @@
           <v-col cols="12" class="m-0 p-0">
             <div class="text-center">
               <p class="mb-0 color--white">
-                <span class="text-capitalize">{{ hostName }}</span>
-                Private Limited
+                <span class="text-uppercase"
+                  >{{ hostName }} Private Limited</span
+                >
               </p>
               <p class="color--white">
                 A 101, Beattock, Moffat, Dumfries and Galloway. United

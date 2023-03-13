@@ -1,16 +1,16 @@
 <template>
   <div class="hero-slider">
-    <img
+    <!-- <img
       src="@/assets/images/digimaze_mobile-brand-am.png"
       alt=""
       style="max-width: 18rem"
-    />
+    /> -->
     <VueSlickCarousel v-bind="settings">
       <v-card
         v-for="(mobileBanner, n) in mobileBanners"
         :key="n"
         flat
-        color="transparent d-none"
+        color="transparent"
         class="mx-auto"
       >
         <v-img
@@ -39,14 +39,14 @@ export default {
           myImage: 'lotus1',
           alt: '',
         },
-        // {
-        //   myImage: 'digimaze_mobile-eion',
-        //   alt: '',
-        // },
-        // {
-        //   myImage: 'digimaze_mobileabd',
-        //   alt: '',
-        // },
+        {
+          myImage: 'lotus1',
+          alt: '',
+        },
+        {
+          myImage: 'lotus1',
+          alt: '',
+        },
       ],
       settings: {
         focusOnSelect: true,
@@ -120,7 +120,7 @@ export default {
 <style lang="scss">
 .hero-slider {
   .slick-list {
-    margin: 0 auto;
+    margin: 0 auto !important;
     width: 17rem !important;
   }
 }

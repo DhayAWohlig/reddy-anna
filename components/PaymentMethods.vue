@@ -12,8 +12,7 @@
               :class="$breakpoint.smAndDown ? 'title' : 'display-1'"
             >
               <!-- payment methods -->
-              Withdraw Your Fairplay Rummy Winnings Instantly with
-              <!-- Withdraw Your  Rummy Winnings Instantly with -->
+              Withdraw Your Winnings Instantly with
             </h2>
           </div>
         </v-col>

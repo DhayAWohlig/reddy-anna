@@ -48,13 +48,7 @@
       >
         Click To Send A Message And Join The Club Today!
       </v-card-text>
-      <v-btn
-        :loading="loading"
-        block
-        rounded
-        color="green"
-        :href="whatsappLink"
-      >
+      <v-btn block rounded color="green" :href="whatsappLink">
         <v-icon size="25" class="mr-2"> mdi-whatsapp </v-icon> Click Here
       </v-btn>
       <v-card-text
@@ -100,7 +94,7 @@ export default {
 }
 .primary--border {
   border: 2px solid;
-  border-color: #ff5f9e;
+  border-color: #e15b27;
 }
 .bg-card-color-opacity {
   background-color: rgba(0, 0, 0, 0.75);

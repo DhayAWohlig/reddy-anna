@@ -24,11 +24,11 @@
       </div>
       <v-toolbar class="container">
         <v-toolbar-title class="">
-          <nuxt-link to="/">
+          <nuxt-link to="/#">
             <v-toolbar-title>
               <!-- <v-icon size="25">mdi-home</v-icon> -->
-              <!-- <span class="f16">Home</span> -->
-              <span class="f16 text-capitalize">{{ hostName }}</span>
+              <span class="f16 text-uppercase">Home</span>
+              <!-- <span class="f16 text-uppercase">{{ hostName }}</span> -->
             </v-toolbar-title>
           </nuxt-link>
         </v-toolbar-title>

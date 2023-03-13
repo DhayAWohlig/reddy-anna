@@ -1,11 +1,7 @@
 <template>
   <div>
-    <h6 class="text-center">
-      Daily <strong class="color--yellow chip--dark">5 Lakhs+</strong>
-      <span class="text-capitalize">{{ hostName }}</span> Winners
-    </h6>
     <v-card
-      class="primary--border bg-card-color-opacity"
+      class="primary--border bg-card-color-opacity d-none"
       justify="center"
       :class="$vuetify.breakpoint.xsOnly ? 'pa-4' : 'pa-11'"
     >
@@ -31,7 +27,7 @@
         created)</v-card-text
       >
     </v-card>
-    <v-card class="primary--border bg-card-color-opacity d-none">
+    <v-card class="primary--border bg-card-color-opacity">
       <a href="https://wa.link/lotuspower" target="_blank"
         ><img src="@/assets/images/getinwhatsapp.jpeg"
       /></a>
@@ -40,7 +36,6 @@
 </template>
 <script>
 export default {
-  props: { domainName: String, hostName: String },
   data() {
     return {
       whatsappLink: 'http://wa.link/promofp',
@@ -60,20 +55,9 @@ export default {
 }
 .primary--border {
   border: 2px solid;
-  border-color: #ff5f9e;
+  border-color: #e15b27;
 }
 .bg-card-color-opacity {
   background-color: rgba(0, 0, 0, 0.75);
-}
-.color--yellow {
-  color: #fff600;
-}
-
-.chip--dark {
-  background: #1b1b1b;
-  font-family: gothambold;
-  padding: 5px 12px;
-  border-radius: 30px;
-  font-size: 20px;
 }
 </style>

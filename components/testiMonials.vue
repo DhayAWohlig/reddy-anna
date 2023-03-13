@@ -109,96 +109,6 @@
         </VueSlickCarousel>
       </div>
     </div>
-    <div class="container-fluid bg-white text-black">
-      <br />
-      <br />
-      <br />
-      <div class="px-16">
-        <p style="text-align: justify">
-          Looking to win real cash by playing online Fairplay
-          <!-- <span class="text-capitalize">{{ hostName }}</span>  -->
-          Cash games? Then You are at the right place!
-          <span class="text-capitalize">{{ hostName }}</span> is one of the best
-          online rummy cash games in India. FairPlay Rummy is of the top 10
-          rummy cash games having more than 3Cr+ genuine users.
-        </p>
-
-        <p style="text-align: justify">
-          Show your skills by playing online rummy and win real cash only on
-          <span class="text-capitalize">{{ hostName }}</span
-          >. Get the instant cash withdrawal of your winnings into your bank
-          account.
-        </p>
-        <p>
-          Get the highest rummy instant cash bonuses and rewards to start your
-          journey and win rummy real cash daily.
-        </p>
-
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Get 100% Bonus on 1st Add Cash
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. 50% Instant cash bonus on
-          first deposit
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Use 100% cash bonus to play
-          games
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Get daily, weekly and monthly
-          bonuses
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Spin the wheel daily &amp; get
-          bonuses and cashback
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. Be a VIP and get highest
-          rewards and bonuses<br />
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7. 24x7 Customer support
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8. Lowest industry rummy rake
-        </p>
-
-        <p>
-          You can play different variations of online rummy on FairPlay Rummy:-
-        </p>
-
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Deal Rummy
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Point Rummy
-        </p>
-        <p style="text-align: justify">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Pool Rummy
-        </p>
-        <p>
-          FairPlay Rummy, India's fastest online Rummy site &amp; the best
-          destination for online rummy players in India. So, what are you
-          waiting for? Start your online rummy journey only on FairPlay Rummy
-          and win real cash daily. Play rummy and win real cash.
-        </p>
-        <br />
-        <br />
-        <br />
-      </div>
-    </div>
   </section>
 </template>
 
@@ -208,7 +118,6 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
   components: { VueSlickCarousel },
-  props: ['domainName', 'hostName'],
   data() {
     return {
       model: null,
@@ -222,7 +131,7 @@ export default {
           place: 'Prayagraj, UP',
           winamount: 'WON ₹  25 Lakh',
           since: 'Playing Since 2019',
-          desc: 'I just want to say a big “THANK YOU“ to Fairplay Rummy   for being most genuine app and give us chance to play Game, FairPlay Rummy   is a platform where we can enjoy with friends by playing games, the only thing which is required here is sportsman spirit and gaming skill.',
+          desc: 'I just want to say a big “THANK YOU“ to Shining   for being most genuine app and give us chance to play Game, Shining   is a platform where we can enjoy with friends by playing games, the only thing which is required here is sportsman spirit and gaming skill.',
         },
         {
           myImage:
@@ -242,7 +151,7 @@ export default {
           place: 'West Bengal',
           winamount: 'WON ₹ 30 Lakh',
           since: 'Playing Since 2016',
-          desc: 'I’m Babu Mondal and very glad to say that I am playing on FairPlay Rummy   daily with my friends and families & enjoying Game. In one sentence “ FairPlay Rummy   is the only platform where we can play & enjoy”, I found it very cool!',
+          desc: 'I’m Babu Mondal and very glad to say that I am playing on Shining   daily with my friends and families & enjoying Game. In one sentence “ Shining   is the only platform where we can play & enjoy”, I found it very cool!',
         },
         {
           myImage:
@@ -252,7 +161,7 @@ export default {
           place: 'Meghalaya',
           winamount: 'WON ₹ 25 Lakh',
           since: 'Playing Since 2017',
-          desc: 'After a few months of playing on FairPlay Rummy  , I am very clear that it is really easy to win rewards here. Unlike other applications that guarantee you to pay after reaching the required points but they didn’t pay. Here you get tokens and cashback offers by everyday spinning. Every game is good in the FairPlay Rummy   but game is my all-time favourite.',
+          desc: 'After a few months of playing on Shining  , I am very clear that it is really easy to win rewards here. Unlike other applications that guarantee you to pay after reaching the required points but they didn’t pay. Here you get tokens and cashback offers by everyday spinning. Every game is good in the Shining   but game is my all-time favourite.',
         },
         {
           myImage:
@@ -262,7 +171,7 @@ export default {
           place: 'Haryana',
           winamount: 'WON ₹ 10 Lakh',
           since: 'Playing Since 2018',
-          desc: 'I just want to say a big “THANK YOU“ to FairPlay Rummy for being most genuine app and give us chance to play Game, FairPlay Rummy   is a platform where we can enjoy with friends by playing games, the only thing which is required here is sportsman spirit and gaming skill.',
+          desc: 'I just want to say a big “THANK YOU“ to Shining for being most genuine app and give us chance to play Game, Shining   is a platform where we can enjoy with friends by playing games, the only thing which is required here is sportsman spirit and gaming skill.',
         },
       ],
       settings: {

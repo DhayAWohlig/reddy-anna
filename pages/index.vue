@@ -13,20 +13,18 @@
           class="py-12"
         >
           <v-col
-            class="col-12 col-md-12 col-lg-6"
+            class="col-12 col-md-12 col-lg-6 d-none"
             :class="$vuetify.breakpoint.xsOnly ? 'py-12' : 'py-16'"
           >
             <whatsapp-section
               class="anim"
-              :domain-name="domainName"
-              :host-name="hostName"
               :class="
                 !$vuetify.breakpoint.mdAndDown ? 'px-8 py-20 form2' : 'px-6'
               "
             ></whatsapp-section>
           </v-col>
           <v-col
-            class="col-12 col-md-12 col-lg-6"
+            class="col-12 col-md-12 col-lg-6 d-none"
             :class="$vuetify.breakpoint.xsOnly ? 'py-12' : 'p-0'"
           >
             <div class="text-center">
@@ -62,10 +60,7 @@
               >
                 <v-col cols="12" md="8" lg="12" class="pt-3 max-width">
                   <div cols="12" lg="5" md="5" class="whatsapp-section-margin">
-                    <whatsapp-section
-                      :domain-name="domainName"
-                      :host-name="hostName"
-                    ></whatsapp-section>
+                    <whatsapp-section></whatsapp-section>
                   </div>
                 </v-col>
               </v-row>
@@ -73,12 +68,12 @@
           </v-col>
         </v-row>
       </div>
-      <div class="container-fluid">
-        <PaymentMethods :domain-name="domainName" :host-name="hostName" />
+      <div class="container-fluid payment">
+        <PaymentMethods />
       </div>
-      <div class="container-fluid px-0">
-        <TestiMonials :domain-name="domainName" :host-name="hostName" />
-      </div>
+    </div>
+    <div class="container-fluid">
+      <TestiMonials :domain-name="domainName" :host-name="hostName" />
     </div>
     <PlayGames :domain-name="domainName" :host-name="hostName" />
     <FooterBar :domain-name="domainName" :host-name="hostName" />
@@ -152,9 +147,9 @@ export default {
 .desalign {
   flex-direction: column;
 }
-// .mobalign {
-//   flex-direction: column;
-// }
+.mobalign {
+  // flex-direction: column-reverse;
+}
 .line-height {
   line-height: 0.5;
 }
@@ -259,7 +254,7 @@ export default {
 }
 
 @media screen and (min-width: 960px) and (max-width: 1024px) {
-  .col-lg-8 {
+  .col-lg-8a {
     max-width: 100%;
     width: 100%;
     flex: 0 0 auto;
@@ -267,7 +262,7 @@ export default {
   .DesktopHeight {
     height: 100% !important;
   }
-  .col-lg-5 {
+  .col-lg-5a {
     max-width: 100%;
     width: 100%;
     flex: 0 0 auto;
