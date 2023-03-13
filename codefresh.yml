@@ -1,0 +1,59 @@
+version: "1.0"
+stages:
+    - "clone"
+    - "build"
+    - "gitops"
+steps:
+    main_clone:
+        type: "git-clone"
+        description: "Cloning main repository..."
+        repo: "${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}"
+        revision: "${{CF_REVISION}}"
+        stage: "clone"
+    build:
+        title: "Building Docker Image"
+        type: "build"
+        image_name: "fairplay-contestlp"
+        tag: "${{CF_BRANCH}}-${{CF_REVISION}}"
+        dockerfile: "Dockerfile"
+        stage: "build"
+        registry: "${{ecr}}"
+    clone_gitops:
+        title: cloning gitops repo
+        type: git-clone
+        arguments:
+           repo: 'Fair-Play-Club/ENV'
+           revision: 'pre-production'
+        stage: "gitops"
+        when:
+          branch:
+             only:
+                - main
+    change_manifest:
+        title: "Update k8s manifest"
+        image: "mikefarah/yq" 
+        commands:
+           - yq e '.spec.template.spec.containers[0].image = "444083742860.dkr.ecr.eu-central-1.amazonaws.com/fairplay-contestlp:${{CF_BRANCH}}-${{CF_REVISION}}"' -i deployment.apps/fairplay-contestlp.yaml
+           - cat deployment.apps/fairplay-contestlp.yaml
+        working_directory: "${{clone_gitops}}" 
+        stage: "gitops"
+        when:
+          branch:
+             only:
+               - main
+    commit_and_push:
+        title: Commit manifest
+        type: git-commit
+        stage: "gitops"
+        arguments:
+           repo: 'Fair-Play-Club/ENV'
+           git: Wohlig
+           working_directory: '/codefresh/volume/ENV/deployment.apps'
+           commit_message: Updated newer Image
+           git_user_name: ${{CF_COMMIT_AUTHOR}}
+           git_user_email: ${{CF_COMMIT_AUTHOR}}@wohlig.com
+        when:
+          branch:
+             only:
+               - main
+
